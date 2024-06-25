@@ -5,9 +5,6 @@
 export GLOO_PLATFORM_VERSION="2.5.6"
 export GLOO_PLATFORM_HELM_VALUES_FILE="gloo-gateway-single-helm-values.yaml"
 
-# export GLOO_PLATFORM_VERSION="2.4.11"
-# export GLOO_PLATFORM_HELM_VALUES_FILE="gloo-gateway-single-helm-values-2_4.yaml"
-
 export CLUSTER_NAME=gg-demo-single
 
 # TODO Check that ENV VARs have been set

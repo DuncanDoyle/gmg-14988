@@ -1,0 +1,20 @@
+apiVersion: trafficcontrol.policy.gloo.solo.io/v2
+kind: TransformationPolicy
+metadata:
+  name: test
+  namespace: default
+spec:
+  applyToRoutes:
+  - route:
+      labels:
+        route: httpbin
+  config:
+    phase:
+      preAuthz: {}
+    request:
+      injaTemplate:
+        ignoreErrorOnParse: true
+        extractors:
+          test:
+            header: foo
+            regex: '.*'
